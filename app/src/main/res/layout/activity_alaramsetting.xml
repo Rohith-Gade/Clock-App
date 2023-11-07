@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alaramsetting">
+
+
+    <!-- Custom EditText fields for hour and minute -->
+    <TimePicker
+        android:id="@+id/settime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/repeatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settime"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-1dp"
+        android:text="REPEAT"
+        android:textColor="#673AB7"
+        android:backgroundTint="@color/white"
+         />
+
+    <TextView
+        android:id="@+id/selecteddays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SelectedDays"
+        android:textColor="#03A9F4"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/settime"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/settoneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeatBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Settone"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/selectedsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectedsong"
+        android:textColor="#03A9F4"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/selecteddays"
+        android:layout_alignParentEnd="true"/>
+<Button
+    android:id="@+id/saveBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="save"
+    android:gravity="center"
+    android:layout_below="@id/settoneBtn"
+    android:layout_alignParentEnd="true"
+    android:backgroundTint="@color/white"
+    android:textColor="@color/black"/>
+</RelativeLayout>
+
+
+
+
